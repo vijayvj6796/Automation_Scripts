@@ -1,0 +1,15 @@
+Cannot extend the folder quota_fs, if extended by force then data gets erased.
+cannot mv the folder
+if the folder name is changed, then the quota is for the folder will be delleted automatically.
+
+Usage
+
+There's 3 required flags:
+
+    -m for mountpoint, aka the directory which you want to limit
+    -s the size to which you want to limit in bytes
+    -f filesystem. If you're not sure what this should be, just stick with ext4 or ext3
+
+Here's an example of how I used this script to create ./quoted_dir limited to 1 MiB (that is 10242 in Binary Prefix )
+
+"sudo ./mklimdir.sh -m ./quoted_dir/ -s $((1024*1024)) -f ext4"

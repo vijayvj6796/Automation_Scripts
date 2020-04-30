@@ -3,8 +3,9 @@
 read -p "enter domain name: " domain
 read -p "enter the machine ipv4 address: " ipv4
 read -p "enter the PDC DOMAIN ip: " PDC
-read -p "enter the host name: " host
-sudo hostnamectl set-hostname $host
+read -p "enter the host name: " hostname
+
+sudo hostnamectl set-hostname $hostname
 
 
 echo "IP_of_main_DC             hostname.domainname  hostname"
