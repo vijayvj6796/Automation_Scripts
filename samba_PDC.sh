@@ -42,10 +42,10 @@ host -t SRV _ldap._tcp.$domain
 host -t SRV _kerberos.udp.$domain
 
 sudo systemctl unmask samba-ad-dc
-udo systemctl start samba-ad-dc
+sudo systemctl start samba-ad-dc
 sudo systemctl enable samba-ad-dc
 
 
 
 echo "################################/n successfull completed /n #################"
-n
+ 

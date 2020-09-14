@@ -1,0 +1,6 @@
+---
+id_rsa_file: "/home/ansadmin/.ssh/id_rsa"
+passphrase: "12345"
+root_password: "12345"
+nodes:
+  - 10.14.47.18          
